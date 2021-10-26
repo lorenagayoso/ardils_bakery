@@ -1,0 +1,791 @@
+<!DOCTYPE html>
+<html lang="es">
+
+  <head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link href="https://fonts.googleapis.com/css?family=Raleway:100,300,400,500,700,900" rel="stylesheet">
+    <link href="https://unpkg.com/intro.js/minified/introjs.min.css" rel="stylesheet">
+
+    <title>Ardils Bakery</title>
+    
+<!--
+SOFTY PINKO
+https://templatemo.com/tm-535-softy-pinko
+-->
+
+    <!-- Additional CSS Files -->
+    <link rel="stylesheet" type="text/css" href="assets/css/bootstrap.min.css">
+
+    <link rel="stylesheet" type="text/css" href="assets/css/font-awesome.css">
+
+    <link rel="stylesheet" href="assets/css/templatemo-softy-pinko.css">
+
+    </head>
+    
+    <body>
+    
+    <!-- ***** Preloader Start ***** 
+    <div id="preloader">
+        <div class="jumper">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+    </div>  
+    <!-- ***** Preloader End ***** -->
+    
+    
+    <!-- ***** Header Area Start ***** -->
+    <header class="header-area header-sticky">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <nav class="main-nav">
+                        <!-- ***** Logo Start ***** -->
+                        <a href="#welcome" class="logo">
+                            <img src="assets/images/logo.png" alt="Softy Pinko"/>
+                        </a>
+                        <!-- ***** Logo End ***** -->
+                        <!-- ***** Menu Start ***** -->
+                        <ul class="nav">
+                            <li><a href="#welcome" class="active">Home</a></li>
+                            <li><a href="#features">Productos</a></li>
+                            <li><a  onclick="tour_start()">Cómo pedir</a></li>
+                            <li><a href="#testimonials">Clientes</a></li>
+                            <li><a href="#pricing-plans">Precios de envío</a></li>
+                            <li><a href="#blog">Promociones</a></li>
+                            <li><a href="#contact-us">Contacto</a></li>
+                        </ul>
+                        <a class='menu-trigger'>
+                            <span>Menu</span>
+                        </a>
+                        <!-- ***** Menu End ***** -->
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- ***** Header Area End ***** -->
+
+    <!-- ***** Welcome Area Start ***** -->
+    <div class="welcome-area" id="welcome">
+
+        <!-- ***** Header Text Start ***** -->
+        <div class="header-text">
+            <div class="container">
+                <div class="row">
+                    <div class="offset-xl-3 col-xl-6 offset-lg-2 col-lg-8 col-md-12 col-sm-12">
+                        <h1>Somos <strong>Ardil's Bakery</strong><br>De Buenos Aires a <strong id="location"></strong></h1>
+                        <p>Desde hace 5 años venimos trabajando con los ingredientes orgánicos más frescos del mercado para ofrecer postres de toda la vida con un toque innovador y más saludable.</p>
+
+                        <a class="main-button-slider" style="color:white;" onclick="tour_start()" target="_blank" >¿Cómo pedir?</a>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- ***** Header Text End ***** -->
+    </div>
+    <!-- ***** Welcome Area End ***** -->
+
+    <!-- ***** Features Small Start ***** -->
+    <section class="section home-feature">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="row">
+                        <!-- ***** Features Small Item Start ***** -->
+                        <div class="col-lg-4 col-md-6 col-sm-6 col-12" data-scroll-reveal="enter bottom move 50px over 0.6s after 0.2s">
+                            <div class="features-small-item">
+                                <div class="icon">
+                                    <i><img src="assets/images/featured-item-01.png" alt=""></i>
+                                </div>
+                                <h5 class="features-title">Envío gratuito</h5>
+                                <p><strong>Exclusivamente para pedidos en CABA</strong> recibidos antes de las 18 hrs. de lunes a sábado por nuestro sitio web</p>
+                            </div>
+
+                        </div>
+                        <!-- ***** Features Small Item End ***** -->
+
+                        <!-- ***** Features Small Item Start ***** -->
+                        <div class="col-lg-4 col-md-6 col-sm-6 col-12" data-scroll-reveal="enter bottom move 50px over 0.6s after 0.4s">
+                            <div class="features-small-item">
+                                <div class="icon">
+                                    <i><img src="assets/images/featured-item-01.png" alt=""></i>
+                                </div>
+                                <h5 class="features-title">Hacemos catering</h5>
+                                <p>Para más información, déjanos un mensaje con tus datos de contacto, tipo de evento y cantidad de comensales.</p>
+                            </div>
+                        </div>
+                        <!-- ***** Features Small Item End ***** -->
+
+                        <!-- ***** Features Small Item Start ***** -->
+                        <div class="col-lg-4 col-md-6 col-sm-6 col-12" data-scroll-reveal="enter bottom move 50px over 0.6s after 0.6s">
+                            <div class="features-small-item">
+                                <div class="icon">
+                                    <i><img src="assets/images/featured-item-01.png" alt=""></i>
+                                </div>
+                                <h5 class="features-title">Descuentos por volumen</h5>
+                                <p>Automáticamente, aplicaremos los descuentos disponibles a tus pedidos para ofrecerte siempre el mejor precio.</p>
+                            </div>
+                        </div>
+                        <!-- ***** Features Small Item End ***** -->
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- ***** Features Small End ***** -->
+
+    <!-- ***** Features Big Item Start I ***** -->
+    <section class="section padding-top-70 padding-bottom-0" id="features">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-5 col-md-12 col-sm-12 align-self-center" data-scroll-reveal="enter left move 30px over 0.6s after 0.4s">
+                    <img src="assets/images/left-image.png" class="rounded img-fluid d-block mx-auto" alt="App">
+                </div>
+                <div class="col-lg-1"></div>
+                <div class="col-lg-6 col-md-12 col-sm-12 align-self-center mobile-top-fix">
+                    <div class="left-heading">
+                        <h2 class="section-title">Cupcakes</h2>
+                    </div>
+                    <div class="left-text">
+                        <p>Nullam sit amet purus libero. Etiam ullamcorper nisl ut augue blandit, at finibus leo efficitur. Nam gravida purus non sapien auctor, ut aliquam magna ullamcorper.</p>
+                    </div>
+
+                      <form>
+                      <div id= "relleno-box" data-title="1. Seleccioná tu relleno" data-intro="Todos nuestros cupcakes son hechos con bizcochuelo de vainilla y coco, por lo que podrás personalizar tanto el relleno como el topping">
+                      <label for ="relleno" ><strong>1.</strong> Selecciona tu relleno</label>
+                      </div>
+                      <div id="relleno-options">
+                      <select name="relleno" id="relleno">
+                      <option hidden value="none">Selecciona un relleno</option>
+                      <option value="Chocolate">Chocolate</option>
+                      <option value="Vainilla">Vainilla</option>
+                      <option value="DDL">DDL</option>
+                      <option value="Coco">Coco</option>
+                      <option value="Frutilla">Frutilla</option>
+                      </select>
+                      </div>
+
+                <div id= "topping-box" data-title="2. Seleccioná tu topping" data-intro="Constantemente estamos actualizando nuestros gustos con los ingredientes más frescos de la temporada. En caso de que no tengamos stock, te informaremos para que puedas solicitar otro gusto.">
+                <label for ="topping"><strong>2.</strong> Selecciona tu topping</label>
+                </div>
+
+                <div id="toppings-container">
+
+                <input name="topping-radio" hidden type="radio" value="none">
+
+                <label class="box">
+                <input name="topping-radio" type="radio" value="Chocolate">
+                <span class="checkmark choco"></span>
+                <span class="tooltiptext">Chocolate</span>
+                </label>
+
+                <label class="box">
+                <input name="topping-radio" type="radio" value="Blueberry">
+                <span class="checkmark blueberry"></span>
+                <span class="tooltiptext">Blueberry</span>
+                </label>
+
+                <label class="box">
+                <input name="topping-radio" type="radio" value="Frutilla">
+                <span class="checkmark frutilla"></span>
+                <span class="tooltiptext">Frutilla</span>
+                </label>
+
+                <label class="box">
+                <input name="topping-radio" type="radio" value="Limon">
+                <span class="checkmark limon"></span>
+                <span class="tooltiptext">Limón</span>
+                </label>
+
+                <label class="box">
+                <input name="topping-radio" type="radio" value="Maracuya">
+                <span class="checkmark maracuya"></span>
+                <span class="tooltiptext">Maracuyá</span>
+                </label>
+
+                </div>
+
+
+
+                <div id="size-label-container" data-title="3. Elegí la cantidad y presentación" data-intro="En esta sección encontrarás las promociones que ofrecemos actualmente">
+                <label for ="size"><strong>3.</strong> Selecciona la cantidad</label>
+                </div>
+                <div id="size-qty-container">
+
+                      <select name="size" id="size" required>
+                      <option hidden value="empty">Selecciona un presentación</option>
+                      <option value="0">1/2 docena ($300)</option>
+                      <option value="1">Docena ($550)</option>
+                      <option value="2">20 por 18 ($700)</option>
+                     </select>
+                    <input name="quantity" name="quantity"  id="quantity" type="number" value=1 min=1 max=5>
+                </div>
+
+
+
+                <div id="delivery-label-container" data-title="4. Indicá el método de envio" data-intro="Podrás seleccionar la localidad en la que te encuentrés o solicitar la opción 'take away'. Al final de esta página, encontrarás las zonas a las que llega nuestro delivery.">
+                <label for ="delivery"><strong>4.</strong> Ingresa los datos de envío</label>
+                </div>
+                <div id="delivery-container">
+
+                      <select name="delivery" id="delivery" required>
+                      <option hidden value="empty">Zona</option>
+                      <option value="0">GBA Norte ($250)</option>
+                      <option value="1">GBA Sur ($500)</option>
+                      <option value="2">GBA Oeste ($700)</option>
+                      <option value=""></option>
+                      <option value="4">Take away (Gratis!)</option>
+                     </select>
+                </div>
+                
+
+                <div id="result"></div>
+
+
+                <div id="btn-container">
+                <button type="reset" class="reset main-button" onclick="reset_values()">Borrar</button>
+                <button type="button" id="submit" class="submit main-button" onclick="envio_calc()" data-title="5.Calculá tu envio" data-intro="Antes de generar la orden podrás estimar el valor del envío. Recuerda que para poder hacer esto, debes haber completado los últimos 2 campos.">Calcular orden</button>
+                <button type="button" id="checker" class="checker main-button" onclick="submit_order()" data-title="6.Confirmá tu orden" data-intro="Cuando estés list@ para pedir, en esta opción podrás validar los datos ingresados en los pasos anteriores y corroborar la información antes de enviar tu orden">Generar orden</button>
+                 <br>
+      
+                </div>
+                </form>
+            </div>
+            <div class="row" >
+                <div class="col-lg-12">
+                    <div class="hr"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- ***** Features Big Item End I ***** -->
+
+    <!-- ***** Features Big Item Start II ***** -->
+    <section class="section padding-bottom-100">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 col-md-12 col-sm-12 align-self-center mobile-bottom-fix">
+                    <div class="left-heading">
+                        <h2 class="section-title">Smash hearts</h2>
+                    </div>
+                    <div class="left-text">
+                        <p>Aenean pretium, ipsum et porttitor auctor, metus ipsum iaculis nisi, a bibendum lectus libero vitae urna. Sed id leo eu dolor luctus congue sed eget ipsum. Nunc nec luctus libero. Etiam quis dolor elit.</p>
+                    </div>
+                </div>
+                <div class="col-lg-1"></div>
+                <div class="col-lg-5 col-md-12 col-sm-12 align-self-center mobile-bottom-fix-big" data-scroll-reveal="enter right move 30px over 0.6s after 0.4s">
+                    <img src="assets/images/right-image.jpeg" class="rounded img-fluid d-block mx-auto" alt="App">
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+                <div class="col-lg-12">
+                    <div class="hr"></div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+    <!-- ***** Features Big Item End II ***** -->
+
+    <!-- ***** Features Big Item Start III ***** -->
+    <section class="section padding-top-70 padding-bottom-0" id="features">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-5 col-md-12 col-sm-12 align-self-center" data-scroll-reveal="enter left move 30px over 0.6s after 0.4s">
+                    <img src="assets/images/tea-bombs.jpg" class="rounded img-fluid d-block mx-auto" alt="App">
+                </div>
+                <div class="col-lg-1"></div>
+                <div class="col-lg-6 col-md-12 col-sm-12 align-self-center mobile-top-fix">
+                    <div class="left-heading">
+                        <h2 class="section-title">Tea Bombs</h2>
+                    </div>
+                    <div class="left-text">
+                        <p>Nullam sit amet purus libero. Etiam ullamcorper nisl ut augue blandit, at finibus leo efficitur. Nam gravida purus non sapien auctor, ut aliquam magna ullamcorper.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="hr"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- ***** Features Big Item End III ***** -->
+
+    <!-- ***** Home Parallax Start ***** -->
+    <section class="mini" id="work-process">
+        <div class="mini-content">
+            <div class="container">
+                <div class="row">
+                    <div class="offset-lg-3 col-lg-6">
+                        <div class="info">
+                            <h1>¿Cómo pedir?</h1>
+                            <p>Sigue los siguientes pasos para generar tu pedido. Comenzando por la selección de tu producto, hasta el envío de tu solicitud a nuestro whatsapp y confirmación de reserva.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- ***** Mini Box Start ***** -->
+                <div class="row">
+                    <div class="col-lg-2 col-md-3 col-sm-6 col-6">
+                        <a href="#" class="mini-box">
+                            <i><img src="assets/images/work-process-item-01.png" alt=""></i>
+                            <strong>Seleccioná</strong>
+                            <span>El producto que desees </span>
+                        </a>
+                    </div>
+                    <div class="col-lg-2 col-md-3 col-sm-6 col-6">
+                        <a href="#" class="mini-box">
+                            <i><img src="assets/images/work-process-item-01.png" alt=""></i>
+                            <strong>Personalizá</strong>
+                            <span>Tu pedido a tu gusto</span>
+                        </a>
+                    </div>
+                    <div class="col-lg-2 col-md-3 col-sm-6 col-6">
+                        <a href="#" class="mini-box">
+                            <i><img src="assets/images/work-process-item-01.png" alt=""></i>
+                            <strong>Calculá</strong>
+                            <span>El envío y total de tu pedido</span>
+                        </a>
+                    </div>
+                    <div class="col-lg-2 col-md-3 col-sm-6 col-6">
+                        <a href="#" class="mini-box">
+                            <i><img src="assets/images/work-process-item-01.png" alt=""></i>
+                            <strong>Validá</strong>
+                            <span>Tu pedido y método de envío</span>
+                        </a>
+                    </div>
+                    <div class="col-lg-2 col-md-3 col-sm-6 col-6">
+                        <a href="#" class="mini-box">
+                            <i><img src="assets/images/work-process-item-01.png" alt=""></i>
+                            <strong>Confirmá</strong>
+                            <span>Tu orden via mail</span>
+                        </a>
+                    </div>
+                    <div class="col-lg-2 col-md-3 col-sm-6 col-6">
+                        <a href="#" class="mini-box">
+                            <i><img src="assets/images/work-process-item-01.png" alt=""></i>
+                            <strong>Recibí</strong>
+                            <span>Tu pedido entre 30-45 min.</span>
+                        </a>
+                    </div>
+                </div>
+                <!-- ***** Mini Box End ***** -->
+            </div>
+        </div>
+    </section>
+    <!-- ***** Home Parallax End ***** -->
+
+    <!-- ***** Testimonials Start ***** -->
+    <section class="section" id="testimonials">
+        <div class="container">
+            <!-- ***** Section Title Start ***** -->
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="center-heading">
+                        <h2 class="section-title">¿Qué opinan nuestros clientes?</h2>
+                    </div>
+                </div>
+                <div class="offset-lg-3 col-lg-6">
+                    <div class="center-text">
+                        <p>Donec tempus, sem non rutrum imperdiet, lectus orci fringilla nulla, at accumsan elit eros a turpis. Ut sagittis lectus libero.</p>
+                    </div>
+                </div>
+            </div>
+            <!-- ***** Section Title End ***** -->
+
+            <div class="row">
+                <!-- ***** Testimonials Item Start ***** -->
+                <div class="col-lg-4 col-md-6 col-sm-12">
+                    <div class="team-item">
+                        <div class="team-content">
+                            <i><img src="assets/images/testimonial-icon.png" alt=""></i>
+                            <p>Confiamos en Ardils Bakery para preparar la mesa dulce de nuestra boda. Fue exactamente lo que pedimos , la atención y el detalle es de 10</p>
+                            <div class="user-image">
+                                <img src="http://placehold.it/60x60" alt="">
+                            </div>
+                            <div class="team-info">
+                                <h3 class="user-name">Mariano Paltrufo</h3>
+                                <span>Lomas de Zamora, GBA Sur</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- ***** Testimonials Item End ***** -->
+                
+                <!-- ***** Testimonials Item Start ***** -->
+                <div class="col-lg-4 col-md-6 col-sm-12">
+                    <div class="team-item">
+                        <div class="team-content">
+                            <i><img src="assets/images/testimonial-icon.png" alt=""></i>
+                            <p>Definitivamente los mejores cupcakes de Buenos Aires, siempre les encargamos para las reus familiares y nunca decepcionan. Los mejores LEJOS</p>
+                            <div class="user-image">
+                                <img src="http://placehold.it/60x60" alt="">
+                            </div>
+                            <div class="team-info">
+                                <h3 class="user-name">Ludmila Moreno</h3>
+                                <span>Caballito, CABA</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- ***** Testimonials Item End ***** -->
+                
+                <!-- ***** Testimonials Item Start ***** -->
+                <div class="col-lg-4 col-md-6 col-sm-12">
+                    <div class="team-item">
+                        <div class="team-content">
+                            <i><img src="assets/images/testimonial-icon.png" alt=""></i>
+                            <p>Sus smash hearts son de otro mundo. La creatividad y la atención que ponen en cada detalle es increíble y se nota.Sigan asi!</p>
+                            <div class="user-image">
+                                <img src="http://placehold.it/60x60" alt="">
+                            </div>
+                            <div class="team-info">
+                                <h3 class="user-name">Agustín Robles</h3>
+                                <span>Olivos , GBA Norte</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- ***** Testimonials Item End ***** -->
+            </div>
+        </div>
+    </section>
+    <!-- ***** Testimonials End ***** -->
+
+    <!-- ***** Pricing Plans Start ***** -->
+    <section class="section colored" id="pricing-plans">
+        <div class="container">
+            <!-- ***** Section Title Start ***** -->
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="center-heading">
+                        <h2 class="section-title">Precios de envío</h2>
+                    </div>
+                </div>
+                <div class="offset-lg-3 col-lg-6">
+                    <div class="center-text">
+                        <p>Donec vulputate urna sed rutrum venenatis. Cras consequat magna quis arcu elementum, quis congue risus volutpat.</p>
+                    </div>
+                </div>
+            </div>
+            <!-- ***** Section Title End ***** -->
+
+            <div class="row">
+                <!-- ***** Pricing Item Start ***** -->
+                <div class="col-lg-4 col-md-6 col-sm-12" data-scroll-reveal="enter bottom move 50px over 0.6s after 0.2s">
+                    <div class="pricing-item">
+                        <div class="pricing-header">
+                            <h3 class="pricing-title">CABA</h3>
+                            <h3 class="pricing-title" id="delivery_message">Envío o Take away</h3>
+                        </div>
+                        <div class="pricing-body">
+                            <div class="price-wrapper">
+                                <span class="currency">$</span>
+                                <span class="price" id="caba_price"></span>
+                                <span class="period" id="caba_message"></span>
+                            </div>
+                            <div class="clock" id="clock"></div>
+                            <div id="clock_message"> </div>
+                            <div id="clock_message2">Pero recueda que el take away siempre es GRATIS en CABA</div>  
+                        </div>
+                        <div class="pricing-footer">
+                            <a href="#features" class="main-button">Armá tu pedido</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- ***** Pricing Item End ***** -->
+
+                <!-- ***** Pricing Item Start ***** -->
+                <div class="col-lg-4 col-md-6 col-sm-12" data-scroll-reveal="enter bottom move 50px over 0.6s after 0.4s">
+                    <div class="pricing-item active">
+                        <div class="pricing-header">
+                            <h3 class="pricing-title">GBA Norte</h3>
+                            <h3 class="pricing-title">Envío (30-45 min)</h3>
+                        </div>
+                        <div class="pricing-body">
+                            <div class="price-wrapper">
+                                <span class="currency">$</span>
+                                <span class="price">350</span>
+                                <span class="period">Vte López - San Isidro</span>
+                            </div>
+                            <ul class="list">
+                                <li class="active">Vicente López</li>
+                                <li class="active">Olivos</li>
+                                <li class="active">La Lucila</li>
+                                <li class="active">Martínez</li>
+                                <li class="active">Acassuso</li>
+                                <li class="active">San Isidro</li>
+
+                            </ul>
+                        </div>
+                        <div class="pricing-footer">
+                            <a href="#features" class="main-button">Armá tu pedido</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- ***** Pricing Item End ***** -->
+
+                <!-- ***** Pricing Item Start ***** -->
+                <div class="col-lg-4 col-md-6 col-sm-12" data-scroll-reveal="enter bottom move 50px over 0.6s after 0.6s">
+                    <div class="pricing-item">
+                        <div class="pricing-header">
+                            <h3 class="pricing-title">GBA Sur</h3>
+                            <h3 class="pricing-title">Envío (45 - 60 min)</h3>
+
+                        </div>
+                        <div class="pricing-body">
+                            <div class="price-wrapper">
+                                <span class="currency">$</span>
+                                <span class="price">300</span>
+                                <span class="period">Avellaneda - Temperley</span>
+                            </div>
+                            <ul class="list">
+                                <li class="active">Avellaneda</li>
+                                <li class="active">Lanús</li>
+                                <li class="active">Remedios de Escalada</li>
+                                <li class="active">Banfield</li>
+                                <li class="active">Lomas</li>
+                                <li class="active">Temperley</li>
+                            </ul>
+                        </div>
+                        <div class="pricing-footer">
+                            <a href="#features" class="main-button">Armá tu pedido</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- ***** Pricing Item End ***** -->
+            </div>
+        </div>
+    </section>
+    <!-- ***** Pricing Plans End ***** -->
+
+    <!-- ***** Counter Parallax Start ***** -->
+    <section class="counter">
+        <div class="content">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-3 col-md-6 col-sm-12">
+                        <div class="count-item decoration-bottom">
+                            <strong>126</strong>
+                            <span>Entregas</span>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-sm-12">
+                        <div class="count-item decoration-top">
+                            <strong>63</strong>
+                            <span>Clientes felices</span>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-sm-12">
+                        <div class="count-item decoration-bottom">
+                            <strong>18</strong>
+                            <span>Eventos atendidos</span>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-sm-12">
+                        <div class="count-item">
+                            <strong>+5</strong>
+                            <span>años de servicio</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- ***** Counter Parallax End ***** -->   
+
+    <!-- ***** Blog Start ***** -->
+    <section class="section" id="blog">
+        <div class="container">
+            <!-- ***** Section Title Start ***** -->
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="center-heading">
+                        <h2 class="section-title">Blog Entries</h2>
+                    </div>
+                </div>
+                <div class="offset-lg-3 col-lg-6">
+                    <div class="center-text">
+                        <p>Integer molestie aliquam gravida. Nullam nec arcu finibus, imperdiet nulla vitae, placerat nibh. Cras maximus venenatis molestie.</p>
+                    </div>
+                </div>
+            </div>
+            <!-- ***** Section Title End ***** -->
+
+            <div class="row">
+                <div class="col-lg-4 col-md-6 col-sm-12">
+                    <div class="blog-post-thumb">
+                        <div class="img">
+                            <img src="assets/images/blog-item-01.png" alt="">
+                        </div>
+                        <div class="blog-content">
+                            <h3>
+                                <a href="#">Vivamus ac vehicula dui</a>
+                            </h3>
+                            <div class="text">
+                               Cras aliquet ligula dui, vitae fermentum velit tincidunt id. Praesent eu finibus nunc. Nulla in sagittis eros. Aliquam egestas augue.
+                            </div>
+                            <a href="#" class="main-button">Read More</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-12">
+                    <div class="blog-post-thumb">
+                        <div class="img">
+                            <img src="assets/images/blog-item-02.png" alt="">
+                        </div>
+                        <div class="blog-content">
+                            <h3>
+                                <a href="#">Phasellus convallis augue</a>
+                            </h3>
+                            <div class="text">
+                                Aliquam commodo ornare nisl, et scelerisque nisl dignissim ac. Vestibulum finibus urna ut velit venenatis, vel ultrices sapien mattis.
+                            </div>
+                            <a href="#" class="main-button">Read More</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-12">
+                    <div class="blog-post-thumb">
+                        <div class="img">
+                            <img src="assets/images/blog-item-03.png" alt="">
+                        </div>
+                        <div class="blog-content">
+                            <h3>
+                                <a href="#">Nam gravida purus non</a>
+                            </h3>
+                            <div class="text">
+                                Maecenas eu erat vitae dui convallis consequat vel gravida nulla. Vestibulum finibus euismod odio, ut tempus enim varius eu.
+                            </div>
+                            <a href="#" class="main-button">Read More</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- ***** Blog End ***** -->
+
+    <!-- ***** Contact Us Start ***** -->
+    <section class="section colored" id="contact-us">
+        <div class="container">
+            <!-- ***** Section Title Start ***** -->
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="center-heading">
+                        <h2 class="section-title">Talk To Us</h2>
+                    </div>
+                </div>
+                <div class="offset-lg-3 col-lg-6">
+                    <div class="center-text">
+                        <p>Maecenas pellentesque ante faucibus lectus vulputate sollicitudin. Cras feugiat hendrerit semper.</p>
+                    </div>
+                </div>
+            </div>
+            <!-- ***** Section Title End ***** -->
+
+            <div class="row">
+                <!-- ***** Contact Text Start ***** -->
+                <div class="col-lg-4 col-md-6 col-sm-12">
+                    <h5 class="margin-bottom-30">Keep in touch</h5>
+                    <div class="contact-text">
+                        <p>110-220 Quisque diam odio, maximus ac consectetur eu, 10260
+                        <br>auctor non lorem</p>
+                        <p>You are NOT allowed to re-distribute Softy Pinko template on any template collection websites. Thank you.</p>
+                    </div>
+                </div>
+                <!-- ***** Contact Text End ***** -->
+
+                <!-- ***** Contact Form Start ***** -->
+                <div class="col-lg-8 col-md-6 col-sm-12">
+                    <div class="contact-form">
+                        <form id="contact" action="" method="get">
+                          <div class="row">
+                            <div class="col-lg-6 col-md-12 col-sm-12">
+                              <fieldset>
+                                <input name="name" type="text" class="form-control" id="name" placeholder="Full Name" required="">
+                              </fieldset>
+                            </div>
+                            <div class="col-lg-6 col-md-12 col-sm-12">
+                              <fieldset>
+                                <input name="email" type="email" class="form-control" id="email" placeholder="E-Mail Address" required="">
+                              </fieldset>
+                            </div>
+                            <div class="col-lg-12">
+                              <fieldset>
+                                <textarea name="message" rows="6" class="form-control" id="message" placeholder="Your Message" required=""></textarea>
+                              </fieldset>
+                            </div>
+                            <div class="col-lg-12">
+                              <fieldset>
+                                <button type="submit" id="form-submit" class="main-button">Send Message</button>
+                              </fieldset>
+                            </div>
+                          </div>
+                        </form>
+                    </div>
+                </div>
+                <!-- ***** Contact Form End ***** -->
+            </div>
+        </div>
+    </section>
+    <!-- ***** Contact Us End ***** -->
+    
+    <!-- ***** Footer Start ***** -->
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 col-md-12 col-sm-12">
+                    <ul class="social">
+                        <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                        <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                        <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                        <li><a href="#"><i class="fa fa-rss"></i></a></li>
+                        <li><a href="#"><i class="fa fa-dribbble"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-12">
+                    <p class="copyright">Copyright &copy; 2020 Softy Pinko Company - Design: TemplateMo</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+    
+    
+    <!-- jQuery -->
+    <script src="assets/js/jquery-2.1.0.min.js"></script>
+
+    <!-- Bootstrap -->
+    <script src="assets/js/popper.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+
+    <!-- Plugins -->
+    <script src="assets/js/scrollreveal.min.js"></script>
+    <script src="assets/js/waypoints.min.js"></script>
+    <script src="assets/js/jquery.counterup.min.js"></script>
+    <script src="assets/js/imgfix.min.js"></script> 
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="https://unpkg.com/intro.js/minified/intro.min.js"></script>
+
+    
+    <!-- Global Init -->
+    <script src="assets/js/my_js.js"></script>
+
+  </body>
+</html>
