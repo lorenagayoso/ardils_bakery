@@ -388,7 +388,9 @@ Swal.fire({
 $("#result").innerText = "" ;
 ;}*/
 
-function reset_values(){
+
+
+/*function reset_values(){
 $.ajax({
   url: 'assets/js/products.json',
   success: function(data,textStatus,xhr){
@@ -402,8 +404,13 @@ $.ajax({
   console.log(error)
   }
 })
-;}
+;}*/
 
+function reset_values(){
+$.getJSON("assets/js/products.json", function(json) {
+    console.log(json);
+}); 
+}
 
 /* 	
     let topping_tooltip_text = document.querySelector(".box input:checked ~ .tooltiptext").textContent
