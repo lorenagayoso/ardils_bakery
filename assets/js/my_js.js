@@ -390,7 +390,7 @@ $("#result").innerText = "" ;
 
 function reset_values(){
 $.ajax({
-  url: 'js/products.json',
+  url: 'assets/js/products.json',
   success: function(data,textStatus,xhr){
   console.log(data);
   console.log(textStatus);
