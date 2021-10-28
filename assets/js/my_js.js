@@ -2,6 +2,8 @@ const toppings = document.querySelectorAll('input[name="topping-radio"]');
 
 const size = $("select[name='size']")[0];
 
+const relleno = $("select[name='relleno']")[0];
+
 const delivery = $("select[name='delivery']")[0];
 
 const qty = $("input#quantity")[0];
@@ -19,6 +21,14 @@ const clock_message = $("#clock_message")[0];
 const clock_message2 = $("#clock_message2")[0];
 
 const clock_element = $("#clock")[0];
+
+let topping_selected;
+
+let relleno_selected;
+
+let size_chosen;
+
+let delivery_chosen;
 
 
 /*document.addEventListener("DomContentLoaded", jQuery.getJSON('https://ipinfo.io/json', function myData(data) {
@@ -235,13 +245,13 @@ function toppings_selection(){
 
 function order_selection(){
 
-let relleno_selected = $("select[name='relleno']")[0].options[relleno.selectedIndex].value;
+let relleno_selected = relleno["selectedOptions"][0];
 
 let topping_selected = toppings_selection();
 
-let size_chosen = size.options[size.selectedIndex];
+let size_chosen = size["selectedOptions"][0];
 
-let delivery_chosen = delivery.options[delivery.selectedIndex] ;
+let delivery_chosen = delivery["selectedOptions"][0] ;
 
 let size_fee = Object.values(precios_size)[size_chosen.value] ;
 
@@ -253,7 +263,7 @@ let precio_current = (size_fee * qty_value) + delivery_fee ;
 
 let orden_resumen = 
 [
-"<strong>Relleno:</strong>" + " " + relleno_selected ,
+"<strong>Relleno:</strong>" + " " + relleno_selected.value ,
 "<strong>Topping:</strong> " + " " + toppings_selection(),
 "<strong>Presentacion:</strong> " + " " + size_chosen.innerText.split(" (")[0] ,
 "<strong>Cantidad:</strong> " + " " + qty_value ,
@@ -282,9 +292,9 @@ return ordenParam.join(" ");
 
 function envio_calc(){
 
-let size_chosen = size.options[size.selectedIndex];
+let size_chosen = size["selectedOptions"][0];
 
-let delivery_chosen = delivery.options[delivery.selectedIndex];
+let delivery_chosen = delivery["selectedOptions"][0];
 
 if((size_chosen.value == "empty") || (delivery_chosen.value == "empty")) {
 
@@ -319,13 +329,11 @@ Swal.fire({
 
 function submit_order(){
 
-let relleno_selected = $("select[name='relleno']")[0].options[relleno.selectedIndex];
+let relleno_selected = relleno["selectedOptions"][0];
 
-let topping_selected = toppings_selection();
+let size_chosen = size["selectedOptions"][0];
 
-let size_chosen = size.options[size.selectedIndex];
-
-let delivery_chosen = delivery.options[delivery.selectedIndex];
+let delivery_chosen = delivery["selectedOptions"][0] ;
 
 if((size_chosen.value == "empty") || (delivery_chosen.value == "empty") || (relleno_selected.value == "none") || (toppings_selection() == "none")) {
 
@@ -376,8 +384,24 @@ Swal.fire({
 
 // BORRAR SELECCION
 
-function reset_values(){
+/*function reset_values(){
 $("#result").innerText = "" ;
+;}*/
+
+function reset_values(){
+$.ajax({
+  url: 'js/products.json',
+  success: function(data,textStatus,xhr){
+  console.log(data);
+  console.log(textStatus);
+  console.log(xhr)
+  }, 
+  error: function(xhr,textStatus,error){
+  console.log(xhr);
+  console.log(textStatus);
+  console.log(error)
+  }
+})
 ;}
 
 
