@@ -822,7 +822,7 @@ features
 
 .home-feature {
   padding-bottom: 0px;
-  padding-top: 30px;
+  padding-top: 120px;
   margin-top: -220px;
   z-index: 9;
 }
@@ -1762,6 +1762,21 @@ justify-content: left;
  flex-direction: column;
  font-size: 4em;
  align-items: center;
+}
+
+
+#ip-result-container{
+    display: flex;
+    height: 50px;
+    width: auto;
+    margin: auto;
+    margin-top: 5%;
+    justify-content: center;
+    border: 1px solid white;
+    background-color: black;
+    color: white;
+    border-radius: 20px;
+    padding: 12px 20px;
 }
 
 

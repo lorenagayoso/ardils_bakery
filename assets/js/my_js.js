@@ -22,6 +22,8 @@ const clock_message2 = $("#clock_message2")[0];
 
 const clock_element = $("#clock")[0];
 
+const location_ip = $("#location")[0];
+
 let topping_selected;
 
 let relleno_selected;
@@ -30,16 +32,66 @@ let size_chosen;
 
 let delivery_chosen;
 
+let response_emoji;
 
-/*document.addEventListener("DomContentLoaded", jQuery.getJSON('https://ipinfo.io/json', function myData(data) {
-const location = document.getElementById("location");
+function emojis_by_temp(temp_param){
+if(temp_param >= 22)
+{response_emoji = ["¿Salió birrita ",["🥵","🔥"]," ?"];}
+else if((temp_param < 22) && (temp_param >= 16))
+{response_emoji = ["Lindo día para ",["😍","🧉 + 🧁"]," , no?"];}
+else {response_emoji = ["¿Qué tal un café para calentarnos un poco ",["🥶","☕"]," ?"];}
+return response_emoji
+;}
+
+$(document).ready(function() {
+$.ajax({
+  url: 'https://ipinfo.io/json',
+  success: function(data,textStatus,xhr){
+  location_ip.innerText = data["city"];
+  lat = data["loc"].split(",")[0];
+  lng = data["loc"].split(",")[1];
+  const params = 'airTemperature';
+  const start = new Date().toISOString();
+  const end = new Date().toISOString();
+
+  fetch(`https://api.stormglass.io/v2/weather/point?lat=${lat}&lng=${lng}&params=${params}&start=${start}&end=${end}`, {
+  headers: {
+    'Authorization': '5d8d4c0a-3b40-11ec-86a1-0242ac130002-5d8d4c78-3b40-11ec-86a1-0242ac130002'
+  }
+  }).then((response) => response.json()).then((jsonData) => {
+   
+  let temperatura = jsonData.hours[0].airTemperature.noaa;
+  let response_emoji_txt = emojis_by_temp(temperatura)[0] + emojis_by_temp(temperatura)[1][1] + emojis_by_temp(temperatura)[2];
+  let response_emoji_img = emojis_by_temp(temperatura)[1][0];
+  let result = $("#ip-result-container")[0];
+  result.getElementsByTagName("p")[0].innerText  = "Te acompañamos en estos " + temperatura + " grados " + response_emoji_img + " " + response_emoji_txt;
+  $(result).slideDown();
+
+  window.onscroll = function() {myFunction()};
+
+  function myFunction() {
+  if (document.body.scrollTop  > 70 || document.documentElement.scrollTop > 70) {
+  $(result).slideUp();
+  }}
+  });
+
+  }, 
+  error: function(xhr,textStatus,error){
+  console.log(xhr);
+  console.log(textStatus);
+  console.log(error)
+  }
+})
+;})
+
+/*document.addEventListener("DomContentLoaded", jQuery.getJSON('https://ipinfo.io/json', function myData(data) {;
 location.innerText = JSON.parse(JSON.stringify(data,null,2))["city"];
 ;}))*/
 
-$(document).ready(function() {$.getJSON('https://ipinfo.io/json', function myData(data) {
+/*$(document).ready(function() {$.getJSON('https://ipinfo.io/json', function myData(data) {
 const location = $("#location")[0];
 location.innerText = JSON.parse(JSON.stringify(data,null,2))["city"];
-;})})
+;})})*/
 
 
 if((new Date().getHours() < 18)){
@@ -53,6 +105,8 @@ if((new Date().getHours() < 18)){
          delivery.options[4].innerText = "CABA ($150)"
          delivery.options[4].value = 3
          ;}
+
+
 
 const 
 
@@ -125,7 +179,7 @@ function clock() {
 let time = new Date(),
     
     
-    hours = time.getHours(),
+   hours = time.getHours(),
     
     
     minutes = time.getMinutes(),
@@ -384,33 +438,11 @@ Swal.fire({
 
 // BORRAR SELECCION
 
-/*function reset_values(){
-$("#result").innerText = "" ;
-;}*/
-
-
-
 function reset_values(){
-$.ajax({
-  url: 'assets/js/products.json',
-  success: function(data,textStatus,xhr){
-  console.log(data);
-  console.log(textStatus);
-  console.log(xhr)
-  }, 
-  error: function(xhr,textStatus,error){
-  console.log(xhr);
-  console.log(textStatus);
-  console.log(error)
-  }
-})
+$("#result").innerText = "" ;
 ;}
 
-/*function reset_values(){
-$.getJSON("assets/js/products.json", function(json) {
-    console.log(json);
-}); 
-}*/
+
 
 /* 	
     let topping_tooltip_text = document.querySelector(".box input:checked ~ .tooltiptext").textContent
