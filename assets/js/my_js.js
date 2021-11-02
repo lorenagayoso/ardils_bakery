@@ -70,7 +70,7 @@ $.ajax({
   window.onscroll = function() {myFunction()};
 
   function myFunction() {
-  if (document.body.scrollTop  > 70 || document.documentElement.scrollTop > 70) {
+  if (document.body.scrollTop  > 300 || document.documentElement.scrollTop > 300) {
   $(result).slideUp();
   }}
   });
