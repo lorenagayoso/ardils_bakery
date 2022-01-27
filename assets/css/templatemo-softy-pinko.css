@@ -88,6 +88,13 @@ html, body {
   -moz-osx-font-smoothing: grayscale;
 }
 
+p#form-success{
+font-weight: bold;
+text-align: center;
+border: green 1px solid;
+margin-top: 10px;
+}
+
 a {
   text-decoration: none !important;
 }
@@ -166,6 +173,7 @@ body {
   line-height: 38px;
   margin-bottom: 20px;
 }
+
 
 .center-heading.colored .section-title {
   color: #ffffff;

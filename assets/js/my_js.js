@@ -34,6 +34,12 @@ let delivery_chosen;
 
 let response_emoji;
 
+function message_success(){
+let message = document.getElementById("form-success");
+message.innerText = "mensaje enviado exitosamente";
+message.style.display = 'block';
+}
+
 function emojis_by_temp(temp_param){
 if(temp_param >= 22)
 {response_emoji = ["¿Salió birrita ",["🥵","🔥"]," ?"];}

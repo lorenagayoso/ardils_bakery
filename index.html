@@ -93,8 +93,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                     <div class="offset-xl-3 col-xl-6 offset-lg-2 col-lg-8 col-md-12 col-sm-12">
                         <h1>Somos <strong>Ardil's Bakery</strong><br>De Buenos Aires a <strong id="location"></strong></h1>
                         <p>Desde hace 5 años venimos trabajando con los ingredientes orgánicos más frescos del mercado para ofrecer postres de toda la vida con un toque innovador y más saludable.</p>
-
-                        <a class="main-button-slider" style="color:white;" onclick="tour_start()" target="_blank" >¿Cómo pedir?</a>
+                        <a class="main-button-slider" id="MiID" style="color:white;" onclick="tour_start()" target="_blank" >¿Cómo pedir?</a>
                         </div>
                         <div id="ip-result-container" style="display:none;">
                         <p></p>
@@ -265,7 +264,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
 
                 <div id="btn-container">
-                <button type="reset" class="reset main-button" onclick="reset_values()">Borrar</button>
+                <button type="reset" id="btn_borrar" class="reset main-button" onclick="reset_values()">Borrar</button>
                 <button type="button" id="submit" class="submit main-button" onclick="envio_calc()" data-title="5.Calculá tu envio" data-intro="Antes de generar la orden podrás estimar el valor del envío. Recuerda que para poder hacer esto, debes haber completado los últimos 2 campos.">Calcular orden</button>
                 <button type="button" id="checker" class="checker main-button" onclick="submit_order()" data-title="6.Confirmá tu orden" data-intro="Cuando estés list@ para pedir, en esta opción podrás validar los datos ingresados en los pasos anteriores y corroborar la información antes de enviar tu orden">Generar orden</button>
                  <br>
@@ -744,11 +743,14 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                             </div>
                             <div class="col-lg-12">
                               <fieldset>
-                                <button type="submit" id="form-submit" class="main-button">Send Message</button>
+                                <button type="submit" id="form-submit" class="main-button" onclick="message_success()">Send Message</button>
                               </fieldset>
                             </div>
                           </div>
                         </form>
+                        <div>
+                        <p id='form-success' style="display:none;"></p>
+                        </div>
                     </div>
                 </div>
                 <!-- ***** Contact Form End ***** -->
